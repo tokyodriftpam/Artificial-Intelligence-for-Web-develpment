@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Search</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+}
+</style>
+</head>
+<body>
+
+<h2>Search Registration</h2>
+
+<form action="/search" method="POST">
+    
+    Register Number:
+    <input type="text" name="regno" required>
+
+    <button type="submit">Search</button>
+
+</form>
+
+<br>
+<a href="/">Go to Registration Page</a>
+
+</body>
+</html>

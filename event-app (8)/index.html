@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <script>
+        function validateForm() {
+            const checked = document.querySelectorAll('input[name="events"]:checked');
+
+            if (checked.length === 0) {
+                alert("Select at least one event!");
+                return false;
+            }
+
+            if (checked.length > 3) {
+                alert("Maximum 3 events allowed!");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+}
+</style>
+</head>
+<body>
+
+<h2>Event Registration</h2>
+
+<form action="/register" method="POST" onsubmit="return validateForm()">
+    
+    Register Number:
+    <input type="text" name="regno" required><br><br>
+
+    Name:
+    <input type="text" name="name" required><br><br>
+
+    <h3>Select Events (Max 3)</h3>
+
+    <input type="checkbox" name="events" value="Coding Challenge"> Coding Challenge<br>
+    <input type="checkbox" name="events" value="Debugging Contest"> Debugging Contest<br>
+    <input type="checkbox" name="events" value="Web Design"> Web Design<br>
+    <input type="checkbox" name="events" value="Quiz Competition"> Quiz Competition<br>
+    <input type="checkbox" name="events" value="Paper Presentation"> Paper Presentation<br><br>
+
+    <button type="submit">Register</button>
+
+</form>
+
+<br>
+<a href="/admin">Go to Admin Page</a>
+
+</body>
+</html>

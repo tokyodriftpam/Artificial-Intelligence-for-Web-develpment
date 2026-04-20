@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Event Registration</title>
+</head>
+
+<body>
+    <h1>Event Registration Form</h1>
+    <p class="subtitle">Please register here</p>
+
+    <form>
+        <fieldset class="event-fieldset">
+            <label for="fname"><b>Name:</b></label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="mail"><b>Mail:</b></label><br>
+            <input type="email" id="mail" name="mail"><br>
+
+            <label for="edate"><b>Event Date:</b></label><br>
+            <input type="date" name="Event Date"><br>
+
+            <p><b>Select Gender:</b></p>
+            <input type="radio" name="Gender" value="Male">Male<br>
+            <input type="radio" name="Gender" value="Female">Female<br>
+
+            <p><b>Event Type</b></p>
+            <select name="event_type">
+                <option></option>
+                <option>event a</option>
+                <option>event b</option>
+                <option>event c</option>
+            </select><br><br>
+
+            <label for="addr"><b>Address:</b></label><br>
+            <input type="text" id="addr" name="addr"><br><br>
+
+            <input type="file" name="id_proof"><br><br>
+            <input type="submit" value="Register"><br>
+        </fieldset>
+    </form>
+
+    <p class="subtitle"><b>Reference Video</b></p>
+
+    <video width="520" height="340" style="display: block; margin: auto;" class="center" controls>
+        <source src="C:\Users\urk23cs5045\Downloads\1000156470.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+    transition: 0.3s;
+}
+
+/* Dark Mode */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    background: #1be9f0;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.dark .card {
+    background: #1e1e1e;
+}
+
+/* Animation */
+.fade {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
